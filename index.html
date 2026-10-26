@@ -1,0 +1,1565 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>AMH Publishers | Elite Book Writing, Editing, Design &amp; Global Publishing</title>
+  <meta name="description" content="AMH Publishers is a premier full-service book publishing company. We turn manuscripts into Amazon bestsellers with ghostwriting, developmental editing, award-winning cover design, and worldwide distribution. Keep 100% of your royalties." />
+  <meta name="keywords" content="book publishing, ghostwriting, amazon kdp, book editing, book cover design, self publishing, amh publishers, audiobook production" />
+
+  <!-- Google Fonts: Cinzel (Prestigious Editorial) + Plus Jakarta Sans (Modern UI) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Lenis Modern Smooth Scroll CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ======================================================================
+       1. BOOK-THEMED ANIMATED PRELOADER
+       ====================================================================== -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="book-loader">
+      <div class="book-spine"></div>
+      <div class="book-page left"></div>
+      <div class="book-page right"></div>
+      <div class="book-page flipping"></div>
+    </div>
+    <div class="preloader-brand">AMH PUBLISHERS</div>
+    <div class="preloader-tagline">Crafting Literary Masterpieces</div>
+    <div class="preloader-progress-wrap">
+      <div class="preloader-progress-bar" id="preloader-progress"></div>
+    </div>
+    <div class="preloader-counter" id="preloader-counter">0%</div>
+  </div>
+
+  <!-- ======================================================================
+       2. HEADER & STICKY GLASS NAVBAR
+       ====================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo-link" aria-label="AMH Publishers Home">
+        <div class="brand-logo-wrapper">
+          <img src="AMH_LOGO.webp" alt="AMH Publishers Logo" class="brand-logo-img" />
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#process" class="nav-link">Process</a>
+        <a href="#calculator" class="nav-link">Cost Calculator</a>
+        <a href="#portfolio" class="nav-link">Bestsellers</a>
+        <a href="#why-us" class="nav-link">Why AMH</a>
+        <a href="#packages" class="nav-link">Packages</a>
+        <a href="#testimonials" class="nav-link">Reviews</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </nav>
+
+      <!-- Nav Actions (Theme Toggle Slider, Consultation CTA, Hamburger) -->
+      <div class="nav-actions">
+        <!-- Modern Theme Slider Switch -->
+        <button class="theme-slider-switch" id="theme-toggle" aria-label="Toggle Light and Dark Mode" role="switch" aria-checked="false" title="Switch Theme">
+          <span class="slider-track">
+            <span class="slider-icon sun-icon">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="4"></circle>
+                <path d="M12 2v2"></path>
+                <path d="M12 20v2"></path>
+                <path d="m4.93 4.93 1.41 1.41"></path>
+                <path d="m17.66 17.66 1.41 1.41"></path>
+                <path d="M2 12h2"></path>
+                <path d="M20 12h2"></path>
+                <path d="m6.34 17.66-1.41 1.41"></path>
+                <path d="m19.07 4.93-1.41 1.41"></path>
+              </svg>
+            </span>
+            <span class="slider-icon moon-icon">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+              </svg>
+            </span>
+            <span class="slider-thumb"></span>
+          </span>
+        </button>
+
+        <!-- Primary Header CTA -->
+        <a href="#contact" class="btn btn-primary btn-sm btn-glow">
+          <span>Free Consultation</span>
+          <i data-lucide="arrow-right"></i>
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Open Mobile Menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       3. LIQUID MATERIAL MOBILE MENU (EXPANDS FROM TOP RIGHT)
+       ====================================================================== -->
+  <div class="liquid-mobile-menu" id="liquid-mobile-menu" aria-hidden="true">
+    <div class="mobile-menu-backdrop-glow"></div>
+    
+    <div class="mobile-nav-list">
+      <div class="mobile-nav-item">
+        <a href="#services" class="mobile-nav-link">
+          <span>Publishing Services</span>
+          <i data-lucide="chevron-right"></i>
+        </a>
+      </div>
+      <div class="mobile-nav-item">
+        <a href="#process" class="mobile-nav-link">
+          <span>Our 5-Step Process</span>
+          <i data-lucide="chevron-right"></i>
+        </a>
+      </div>
+      <div class="mobile-nav-item">
+        <a href="#calculator" class="mobile-nav-link">
+          <span>Royalty &amp; Cost Estimator</span>
+          <i data-lucide="chevron-right"></i>
+        </a>
+      </div>
+      <div class="mobile-nav-item">
+        <a href="#portfolio" class="mobile-nav-link">
+          <span>Bestseller Portfolio</span>
+          <i data-lucide="chevron-right"></i>
+        </a>
+      </div>
+      <div class="mobile-nav-item">
+        <a href="#why-us" class="mobile-nav-link">
+          <span>The AMH Advantage</span>
+          <i data-lucide="chevron-right"></i>
+        </a>
+      </div>
+      <div class="mobile-nav-item">
+        <a href="#packages" class="mobile-nav-link">
+          <span>Publishing Packages</span>
+          <i data-lucide="chevron-right"></i>
+        </a>
+      </div>
+      <div class="mobile-nav-item">
+        <a href="#contact" class="mobile-nav-link">
+          <span>Contact &amp; Proposal</span>
+          <i data-lucide="chevron-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Mobile Menu Footer Contacts -->
+    <div class="mobile-menu-footer">
+      <div class="mobile-contact-card">
+        <a href="tel:4242166219" class="mobile-contact-item">
+          <i data-lucide="phone-call"></i>
+          <span>424 216 6219</span>
+        </a>
+        <a href="mailto:info@amhpublishers.com" class="mobile-contact-item">
+          <i data-lucide="mail"></i>
+          <span>info@amhpublishers.com</span>
+        </a>
+      </div>
+      <a href="#contact" class="btn btn-primary btn-glow" style="width: 100%; justify-content: center;">
+        <span>Claim Free Proposal</span>
+        <i data-lucide="sparkles"></i>
+      </a>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- ====================================================================
+         4. HERO SECTION (ANIMATED, ALIVE & INTERACTIVE)
+         ==================================================================== -->
+    <section class="hero-section" id="hero">
+      <!-- Particle Stars Canvas -->
+      <canvas id="hero-canvas"></canvas>
+
+      <div class="container hero-grid">
+        <!-- Hero Text & CTAs -->
+        <div class="hero-content">
+
+          <h1 class="hero-title">
+            <span class="hero-static-line">Your Story. Your Book.</span>
+            <span class="hero-static-line">Our World-Class</span>
+            <span class="hero-typewriter-line">
+              <span class="typewriter-wrapper">
+                <span id="typewriter-target">Ghostwriting</span><span class="typewriter-cursor"></span>
+              </span>
+            </span>
+          </h1>
+
+          <p class="hero-description">
+            Transform your raw concepts and manuscripts into bestselling books. AMH Publishers unites acclaimed ghostwriting, meticulous developmental editing, custom 3D cover art, and global distribution across Amazon, Barnes &amp; Noble, and 40,000+ bookstores worldwide. You keep <strong style="color: var(--accent-orange);">100% of your royalties and rights</strong>.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary btn-lg btn-glow">
+              <span>Claim Free Manuscript Audit</span>
+              <i data-lucide="arrow-right"></i>
+            </a>
+            <a href="#portfolio" class="btn btn-secondary btn-lg">
+              <span>View Bestsellers</span>
+              <i data-lucide="book-open"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero 3D Interactive Book Mockup -->
+        <div class="hero-visual-wrapper" id="hero-tilt-container">
+          <div class="book-stage-glow"></div>
+
+          <!-- 3D Interactive Book Card -->
+          <div class="book-card-3d" id="hero-book-card">
+            <div class="book-cover">
+              <div class="book-badge-ribbon">
+                <i data-lucide="star"></i> #1 Bestseller
+              </div>
+              <div class="book-cover-center">
+                <div class="book-cover-title">THE ARCHITECT<br />OF THOUGHT</div>
+                <div class="book-cover-subtitle">A Visionary Framework for Mastery</div>
+              </div>
+              <div class="book-cover-footer">
+                <span class="book-author-name">Dr. Marcus Vance</span>
+                <span class="book-publisher-tag">AMH PRESS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Orbiting Metric Floating Badges -->
+          <div class="floating-metric-card pos-top-left">
+            <div class="floating-icon-box">
+              <i data-lucide="check-circle-2"></i>
+            </div>
+            <div>
+              <div class="floating-metric-title">Guaranteed Distribution</div>
+              <div class="floating-metric-sub">Amazon KDP &amp; IngramSpark</div>
+            </div>
+          </div>
+
+          <div class="floating-metric-card pos-bottom-right">
+            <div class="floating-icon-box">
+              <i data-lucide="shield-check"></i>
+            </div>
+            <div>
+              <div class="floating-metric-title">100% Copyrights</div>
+              <div class="floating-metric-sub">Full author ownership</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         5. TRUSTED DISTRIBUTORS & MEDIA TICKER (MARQUEE)
+         ==================================================================== -->
+    <section class="marquee-section" aria-label="Media Accreditations and Retail Networks">
+      <div class="marquee-heading">Worldwide Distribution &amp; Retail Network Partners</div>
+      <div class="marquee-track-container">
+        <div class="marquee-track">
+          <!-- Item Set 1 -->
+          <div class="partner-logo-item"><i data-lucide="shopping-bag"></i> Amazon Kindle Direct</div>
+          <div class="partner-logo-item"><i data-lucide="book-marked"></i> Barnes &amp; Noble</div>
+          <div class="partner-logo-item"><i data-lucide="layers"></i> IngramSpark</div>
+          <div class="partner-logo-item"><i data-lucide="smartphone"></i> Apple Books</div>
+          <div class="partner-logo-item"><i data-lucide="play-circle"></i> Google Play Books</div>
+          <div class="partner-logo-item"><i data-lucide="headphones"></i> Audible by Amazon</div>
+          <div class="partner-logo-item"><i data-lucide="newspaper"></i> The New York Times</div>
+          <div class="partner-logo-item"><i data-lucide="globe"></i> Forbes Books</div>
+          <div class="partner-logo-item"><i data-lucide="bookmark"></i> Kobo Rakuten</div>
+
+          <!-- Item Set 2 (Duplicate for continuous loop) -->
+          <div class="partner-logo-item"><i data-lucide="shopping-bag"></i> Amazon Kindle Direct</div>
+          <div class="partner-logo-item"><i data-lucide="book-marked"></i> Barnes &amp; Noble</div>
+          <div class="partner-logo-item"><i data-lucide="layers"></i> IngramSpark</div>
+          <div class="partner-logo-item"><i data-lucide="smartphone"></i> Apple Books</div>
+          <div class="partner-logo-item"><i data-lucide="play-circle"></i> Google Play Books</div>
+          <div class="partner-logo-item"><i data-lucide="headphones"></i> Audible by Amazon</div>
+          <div class="partner-logo-item"><i data-lucide="newspaper"></i> The New York Times</div>
+          <div class="partner-logo-item"><i data-lucide="globe"></i> Forbes Books</div>
+          <div class="partner-logo-item"><i data-lucide="bookmark"></i> Kobo Rakuten</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         6. THE AMH PUBLISHING PROCESS (STEP-BY-STEP ROADMAP)
+         ==================================================================== -->
+    <section class="section-padding process-section" id="process">
+      <div class="container">
+        <div class="text-center reveal-on-scroll">
+          <div class="section-tag">
+            <i data-lucide="compass"></i> Seamless Pathway
+          </div>
+          <h2 class="section-title">The AMH 5-Step Publishing Journey</h2>
+          <p class="section-subtitle">
+            From concept brainstorming to international bestseller shelves. We manage every technical and creative phase so you can focus on sharing your voice.
+          </p>
+        </div>
+
+        <div class="process-steps-wrap">
+          <div class="process-steps-grid">
+            <!-- Step 1 -->
+            <div class="process-step-card reveal-on-scroll">
+              <div class="step-num-badge">01</div>
+              <h3 class="step-card-title">Discovery &amp; Strategy</h3>
+              <p class="step-card-desc">
+                We review your manuscript or book concept, outline your target audience, and formulate a customized editorial and publication roadmap.
+              </p>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="process-step-card reveal-on-scroll">
+              <div class="step-num-badge">02</div>
+              <h3 class="step-card-title">Editorial &amp; Polish</h3>
+              <p class="step-card-desc">
+                Veteran editors conduct developmental editing, line-by-line refinement, fact-checking, and proofreading adhering to Chicago Manual standards.
+              </p>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="process-step-card reveal-on-scroll">
+              <div class="step-num-badge">03</div>
+              <h3 class="step-card-title">Bespoke Design</h3>
+              <p class="step-card-desc">
+                Our award-winning artists craft captivating 3D book covers, custom dust jackets, typography flourishes, and print-ready interior layouts.
+              </p>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="process-step-card reveal-on-scroll">
+              <div class="step-num-badge">04</div>
+              <h3 class="step-card-title">Global Distribution</h3>
+              <p class="step-card-desc">
+                We assign exclusive ISBN numbers, barcode generation, copyright registrations, and deploy your title to 40,000+ bookstores and libraries.
+              </p>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="process-step-card reveal-on-scroll">
+              <div class="step-num-badge">05</div>
+              <h3 class="step-card-title">Bestseller Launch</h3>
+              <p class="step-card-desc">
+                We activate targeted Amazon advertising, media press releases, and author branding to elevate your book to #1 category ranking.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         7. FULL-SERVICE PUBLISHING SUITE (SERVICES)
+         ==================================================================== -->
+    <section class="section-padding services-section" id="services">
+      <div class="container">
+        <div class="text-center reveal-on-scroll">
+          <div class="section-tag">
+            <i data-lucide="sparkles"></i> End-To-End Author Solutions
+          </div>
+          <h2 class="section-title">Everything Needed to Publish With Authority</h2>
+          <p class="section-subtitle">
+            Say goodbye to coordinating between scattered freelancers. AMH delivers comprehensive, high-caliber publishing services under one dedicated team.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1: Ghostwriting -->
+          <div class="service-card reveal-on-scroll">
+            <div>
+              <div class="service-icon-box">
+                <i data-lucide="feather"></i>
+              </div>
+              <h3 class="service-card-title">Ghostwriting &amp; Memoirs</h3>
+              <p class="service-card-desc">
+                Have a compelling story or visionary business framework but lack the time to write? Our bestselling ghostwriters capture your voice authentically.
+              </p>
+              <div class="service-features-list">
+                <div class="service-feature-item">
+                  <i data-lucide="check"></i> 1-on-1 In-Depth Author Interviews
+                </div>
+                <div class="service-feature-item">
+                  <i data-lucide="check"></i> 100% Confidentiality &amp; Legal NDA
+                </div>
+                <div class="service-feature-item">
+                  <i data-lucide="check"></i> Chapter-by-Chapter Approvals
+                </div>
+              </div>
+            </div>
+            <div class="service-card-action">
+              <span class="service-link-btn" onclick="openConsultationModal('Ghostwriting & Memoir Writing')">
+                <span>Start Writing</span>
+                <i data-lucide="arrow-right"></i>
+              </span>
+            </div>
+          </div>
+
+          <!-- Service 2: Editing -->
+          <div class="service-card reveal-on-scroll">
+            <div>
+              <div class="service-icon-box">
+                <i data-lucide="file-check"></i>
+              </div>
+              <h3 class="service-card-title">Editing &amp; Proofreading</h3>
+              <p class="service-card-desc">
+                Transform rough drafts into literary gems. Our multi-tiered editorial passes ensure your narrative is captivating, grammatically flawless, and impactful.
+              </p>
+              <div class="service-features-list">
+                <div class="service-feature-item">
+                  <i data-lucide="check"></i> Developmental &amp; Structural Editing
+                </div>
+                <div class="service-feature-item">
+                  <i data-lucide="check"></i> Copyediting &amp; Tone Consistency
+                </div>
+                <div class="service-feature-item">
+                  <i data-lucide="check"></i> Meticulous Proofreading Passes
+                </div>
+              </div>
+            </div>
+            <div class="service-card-action">
+              <span class="service-link-btn" onclick="openConsultationModal('Editing & Proofreading')">
+                <span>Refine Manuscript</span>
+                <i data-lucide="arrow-right"></i>
+              </span>
+            </div>
+          </div>
+
+          <!-- Service 3: Cover Design -->
+          <div class="service-card reveal-on-scroll">
+            <div>
+              <div class="service-icon-box">
+                <i data-lucide="palette"></i>
+              </div>
+              <h3 class="service-card-title">Cover Design &amp; Typesetting</h3>
+              <p class="service-card-desc">
+                Readers do judge books by their covers. Our award-winning graphic artists craft genre-commanding book jackets and elegant interior formatting.
+              </p>
+              <div class="service-features-list">
+                <div class="service-feature-item">
+                  <i data-lucide="check"></i> Custom 3D Hardcover &amp; Paperback Jackets
+                </div>
+                <div class="service-feature-item">
+                  <i data-lucide="check"></i> Print-Ready Spine &amp; Flap Calculations
+                </div>
+                <div class="service-feature-item">
+                  <i data-lucide="check"></i> Beautiful eBook &amp; PDF Interior Layout
+                </div>
+              </div>
+            </div>
+            <div class="service-card-action">
+              <span class="service-link-btn" onclick="openConsultationModal('Cover Design & Formatting')">
+                <span>Design Cover</span>
+                <i data-lucide="arrow-right"></i>
+              </span>
+            </div>
+          </div>
+
+          <!-- Service 4: Publishing & Distribution -->
+          <div class="service-card reveal-on-scroll">
+            <div>
+              <div class="service-icon-box">
+                <i data-lucide="globe-2"></i>
+              </div>
+              <h3 class="service-card-title">Global Publishing &amp; Distribution</h3>
+              <p class="service-card-desc">
+                Launch your book internationally across 40,000+ bookstores, libraries, and digital retail giants including Amazon KDP, Barnes &amp; Noble, and Apple Books.
+              </p>
+              <div class="service-features-list">
+                <div class="service-feature-item">
+                  <i data-lucide="check"></i> Official ISBN &amp; Barcode Assignment
+                </div>
+                <div class="service-feature-item">
+                  <i data-lucide="check"></i> Library of Congress Control Number (LCCN)
+                </div>
+                <div class="service-feature-item">
+                  <i data-lucide="check"></i> 100% Direct Royalty Payouts
+                </div>
+              </div>
+            </div>
+            <div class="service-card-action">
+              <span class="service-link-btn" onclick="openConsultationModal('Publishing & Distribution')">
+                <span>Publish Globally</span>
+                <i data-lucide="arrow-right"></i>
+              </span>
+            </div>
+          </div>
+
+          <!-- Service 5: Book Marketing & PR -->
+          <div class="service-card reveal-on-scroll">
+            <div>
+              <div class="service-icon-box">
+                <i data-lucide="trending-up"></i>
+              </div>
+              <h3 class="service-card-title">Bestseller Marketing &amp; PR</h3>
+              <p class="service-card-desc">
+                Publishing is only half the battle. Our digital marketing strategists deploy algorithmic Amazon Ads, press releases, and book promotions to drive sales.
+              </p>
+              <div class="service-features-list">
+                <div class="service-feature-item">
+                  <i data-lucide="check"></i> Guaranteed Amazon Bestseller Campaign
+                </div>
+                <div class="service-feature-item">
+                  <i data-lucide="check"></i> National Media &amp; Press Release Outreach
+                </div>
+                <div class="service-feature-item">
+                  <i data-lucide="check"></i> Social Media &amp; Influencer Book Reviews
+                </div>
+              </div>
+            </div>
+            <div class="service-card-action">
+              <span class="service-link-btn" onclick="openConsultationModal('Book Marketing & PR')">
+                <span>Launch Campaign</span>
+                <i data-lucide="arrow-right"></i>
+              </span>
+            </div>
+          </div>
+
+          <!-- Service 6: Audiobook Production -->
+          <div class="service-card reveal-on-scroll">
+            <div>
+              <div class="service-icon-box">
+                <i data-lucide="mic"></i>
+              </div>
+              <h3 class="service-card-title">Audiobook Production</h3>
+              <p class="service-card-desc">
+                Tap into the booming audiobook market. We cast professional SAG-AFTRA voice talent and master the sound to pristine ACX and Audible specifications.
+              </p>
+              <div class="service-features-list">
+                <div class="service-feature-item">
+                  <i data-lucide="check"></i> Voice Casting (Multiple Accents &amp; Tones)
+                </div>
+                <div class="service-feature-item">
+                  <i data-lucide="check"></i> Studio-Grade Audio Mastering &amp; Noise Floor
+                </div>
+                <div class="service-feature-item">
+                  <i data-lucide="check"></i> Distribution on Audible, Apple &amp; Spotify
+                </div>
+              </div>
+            </div>
+            <div class="service-card-action">
+              <span class="service-link-btn" onclick="openConsultationModal('Audiobook Production')">
+                <span>Produce Audio</span>
+                <i data-lucide="arrow-right"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         8. INTERACTIVE PUBLISHING COST & ROYALTY ESTIMATOR
+         ==================================================================== -->
+    <section class="section-padding calculator-section" id="calculator">
+      <div class="container">
+        <div class="text-center reveal-on-scroll">
+          <div class="section-tag">
+            <i data-lucide="calculator"></i> Author Transparency
+          </div>
+          <h2 class="section-title">Interactive Book Project Estimator</h2>
+          <p class="section-subtitle">
+            Configure your manuscript parameters to preview estimated production turnaround and see how much you keep with AMH's 100% royalty model.
+          </p>
+        </div>
+
+        <div class="calculator-card reveal-on-scroll">
+          <!-- Controls Form -->
+          <div class="calc-form-side">
+            <!-- Genre Selection -->
+            <div>
+              <div class="calc-group-title">
+                <i data-lucide="book"></i> 1. Select Book Category
+              </div>
+              <div class="genre-pills-grid" id="calc-genre-grid">
+                <button type="button" class="genre-pill-btn is-selected" data-genre="business">Business &amp; Tech</button>
+                <button type="button" class="genre-pill-btn" data-genre="memoir">Memoir &amp; Bio</button>
+                <button type="button" class="genre-pill-btn" data-genre="fiction">Fiction &amp; Novel</button>
+                <button type="button" class="genre-pill-btn" data-genre="selfhelp">Self-Help</button>
+                <button type="button" class="genre-pill-btn" data-genre="children">Children's Book</button>
+                <button type="button" class="genre-pill-btn" data-genre="academic">Academic &amp; Essay</button>
+              </div>
+            </div>
+
+            <!-- Word Count Slider -->
+            <div class="range-slider-wrapper">
+              <div class="range-slider-header">
+                <div class="calc-group-title" style="margin-bottom: 0;">
+                  <i data-lucide="type"></i> 2. Estimated Word Count
+                </div>
+                <div class="range-slider-val" id="slider-count-display">45,000 Words</div>
+              </div>
+              <input type="range" class="custom-range-slider" id="calc-word-slider" min="5000" max="120000" step="5000" value="45000" />
+            </div>
+
+            <!-- Formats Selection -->
+            <div>
+              <div class="calc-group-title">
+                <i data-lucide="check-square"></i> 3. Desired Publishing Formats
+              </div>
+              <div class="format-checkbox-grid">
+                <label class="custom-checkbox-label">
+                  <input type="checkbox" class="calc-format-check" value="ebook" checked />
+                  <span class="custom-check-box"><i data-lucide="check"></i></span>
+                  <span class="checkbox-text">eBook (Kindle, ePub)</span>
+                </label>
+                <label class="custom-checkbox-label">
+                  <input type="checkbox" class="calc-format-check" value="paperback" checked />
+                  <span class="custom-check-box"><i data-lucide="check"></i></span>
+                  <span class="checkbox-text">Paperback Print</span>
+                </label>
+                <label class="custom-checkbox-label">
+                  <input type="checkbox" class="calc-format-check" value="hardcover" />
+                  <span class="custom-check-box"><i data-lucide="check"></i></span>
+                  <span class="checkbox-text">Hardcover Foil Edition</span>
+                </label>
+                <label class="custom-checkbox-label">
+                  <input type="checkbox" class="calc-format-check" value="audiobook" />
+                  <span class="custom-check-box"><i data-lucide="check"></i></span>
+                  <span class="checkbox-text">Audible Audiobook</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dynamic Output Results -->
+          <div class="calc-result-side">
+            <div>
+              <div class="calc-summary-header">
+                <div class="calc-summary-title">Project Blueprint</div>
+                <div style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;">Tailored to your manuscript parameters</div>
+              </div>
+
+              <div class="calc-metrics-list">
+                <div class="calc-metric-row">
+                  <span class="calc-metric-name">Estimated Pages:</span>
+                  <span class="calc-metric-val" id="calc-result-pages">~180 Pages</span>
+                </div>
+                <div class="calc-metric-row">
+                  <span class="calc-metric-name">Production Turnaround:</span>
+                  <span class="calc-metric-val highlight" id="calc-result-turnaround">30 - 45 Days</span>
+                </div>
+                <div class="calc-metric-row">
+                  <span class="calc-metric-name">Recommended Suite:</span>
+                  <span class="calc-metric-val" id="calc-result-suite">Bestseller Showcase</span>
+                </div>
+                <div class="calc-metric-row">
+                  <span class="calc-metric-name">Author Royalties:</span>
+                  <span class="calc-metric-val highlight">100% Retained</span>
+                </div>
+              </div>
+
+              <div class="royalty-highlight-card">
+                <i data-lucide="shield-alert"></i>
+                <div>
+                  <div class="royalty-text-title">Zero Royalty Cuts</div>
+                  <div class="royalty-text-desc">Unlike traditional vanity publishers who take 30-50%, all Amazon sales deposit straight into your account.</div>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="btn btn-primary btn-glow" id="calc-proposal-btn" style="width: 100%; justify-content: center;">
+              <span>Lock In This Proposal</span>
+              <i data-lucide="arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         9. FEATURED BESTSELLERS PORTFOLIO
+         ==================================================================== -->
+    <section class="section-padding portfolio-section" id="portfolio">
+      <div class="container">
+        <div class="text-center reveal-on-scroll">
+          <div class="section-tag">
+            <i data-lucide="library"></i> Proven Success
+          </div>
+          <h2 class="section-title">Featured Bestsellers &amp; Published Titles</h2>
+          <p class="section-subtitle">
+            Explore books created, edited, formatted, and published under the AMH imprint that topped Amazon charts and inspired readers worldwide.
+          </p>
+
+          <!-- Category Filter Pills -->
+          <div class="portfolio-filters-row">
+            <button class="portfolio-filter-btn active" data-filter="all">All Genres</button>
+            <button class="portfolio-filter-btn" data-filter="business">Business &amp; Leadership</button>
+            <button class="portfolio-filter-btn" data-filter="fiction">Fiction &amp; Thriller</button>
+            <button class="portfolio-filter-btn" data-filter="memoir">Memoir &amp; Bio</button>
+            <button class="portfolio-filter-btn" data-filter="selfhelp">Self-Help &amp; Growth</button>
+          </div>
+        </div>
+
+        <div class="portfolio-grid" id="portfolio-grid">
+          <!-- Book 1 -->
+          <div class="book-portfolio-card reveal-on-scroll" data-category="business" onclick="openBookModal(0)">
+            <div class="portfolio-cover-stage">
+              <div class="portfolio-book-mockup" style="background-image: url('https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=600&q=80');"></div>
+            </div>
+            <span class="portfolio-badge">Business &amp; Leadership</span>
+            <h3 class="portfolio-book-title">The Sovereign Leader</h3>
+            <div class="portfolio-book-author">by Harrison Cole</div>
+            <div class="portfolio-rating-stars">
+              <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+            </div>
+            <span class="portfolio-preview-btn">
+              <span>Read Synopsis</span>
+              <i data-lucide="arrow-up-right"></i>
+            </span>
+          </div>
+
+          <!-- Book 2 -->
+          <div class="book-portfolio-card reveal-on-scroll" data-category="fiction" onclick="openBookModal(1)">
+            <div class="portfolio-cover-stage">
+              <div class="portfolio-book-mockup" style="background-image: url('https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=600&q=80');"></div>
+            </div>
+            <span class="portfolio-badge">Psychological Thriller</span>
+            <h3 class="portfolio-book-title">Echoes of the Silent Mind</h3>
+            <div class="portfolio-book-author">by Elena Rostova</div>
+            <div class="portfolio-rating-stars">
+              <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+            </div>
+            <span class="portfolio-preview-btn">
+              <span>Read Synopsis</span>
+              <i data-lucide="arrow-up-right"></i>
+            </span>
+          </div>
+
+          <!-- Book 3 -->
+          <div class="book-portfolio-card reveal-on-scroll" data-category="memoir" onclick="openBookModal(2)">
+            <div class="portfolio-cover-stage">
+              <div class="portfolio-book-mockup" style="background-image: url('https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=600&q=80');"></div>
+            </div>
+            <span class="portfolio-badge">Personal Memoir</span>
+            <h3 class="portfolio-book-title">Beyond the Horizon</h3>
+            <div class="portfolio-book-author">by Captain David Hayes</div>
+            <div class="portfolio-rating-stars">
+              <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+            </div>
+            <span class="portfolio-preview-btn">
+              <span>Read Synopsis</span>
+              <i data-lucide="arrow-up-right"></i>
+            </span>
+          </div>
+
+          <!-- Book 4 -->
+          <div class="book-portfolio-card reveal-on-scroll" data-category="selfhelp" onclick="openBookModal(3)">
+            <div class="portfolio-cover-stage">
+              <div class="portfolio-book-mockup" style="background-image: url('https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=600&q=80');"></div>
+            </div>
+            <span class="portfolio-badge">Mindfulness &amp; Focus</span>
+            <h3 class="portfolio-book-title">Unshakable Calm</h3>
+            <div class="portfolio-book-author">by Dr. Cheryl Brooks</div>
+            <div class="portfolio-rating-stars">
+              <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+            </div>
+            <span class="portfolio-preview-btn">
+              <span>Read Synopsis</span>
+              <i data-lucide="arrow-up-right"></i>
+            </span>
+          </div>
+
+          <!-- Book 5 -->
+          <div class="book-portfolio-card reveal-on-scroll" data-category="fiction" onclick="openBookModal(4)">
+            <div class="portfolio-cover-stage">
+              <div class="portfolio-book-mockup" style="background-image: url('https://images.unsplash.com/photo-1476275466078-4007374efbbe?auto=format&fit=crop&w=600&q=80');"></div>
+            </div>
+            <span class="portfolio-badge">Sci-Fi Epic</span>
+            <h3 class="portfolio-book-title">The Quantum Rift</h3>
+            <div class="portfolio-book-author">by Kenneth Wright</div>
+            <div class="portfolio-rating-stars">
+              <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+            </div>
+            <span class="portfolio-preview-btn">
+              <span>Read Synopsis</span>
+              <i data-lucide="arrow-up-right"></i>
+            </span>
+          </div>
+
+          <!-- Book 6 -->
+          <div class="book-portfolio-card reveal-on-scroll" data-category="business" onclick="openBookModal(5)">
+            <div class="portfolio-cover-stage">
+              <div class="portfolio-book-mockup" style="background-image: url('https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?auto=format&fit=crop&w=600&q=80');"></div>
+            </div>
+            <span class="portfolio-badge">FinTech &amp; Strategy</span>
+            <h3 class="portfolio-book-title">Digital Currency Frontier</h3>
+            <div class="portfolio-book-author">by Amanda Sterling</div>
+            <div class="portfolio-rating-stars">
+              <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+            </div>
+            <span class="portfolio-preview-btn">
+              <span>Read Synopsis</span>
+              <i data-lucide="arrow-up-right"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         10. THE AMH ADVANTAGE (WHY CHOOSE US)
+         ==================================================================== -->
+    <section class="section-padding why-us-section" id="why-us">
+      <div class="container">
+        <div class="text-center reveal-on-scroll">
+          <div class="section-tag">
+            <i data-lucide="shield-check"></i> Author First Philosophy
+          </div>
+          <h2 class="section-title">Why Visionary Authors Partner With AMH</h2>
+          <p class="section-subtitle">
+            We operate with complete clarity, legal protection, and a relentless focus on author empowerment.
+          </p>
+        </div>
+
+        <div class="why-us-grid">
+          <div class="advantage-card reveal-on-scroll">
+            <div class="advantage-icon-wrap">
+              <i data-lucide="wallet"></i>
+            </div>
+            <h3 class="advantage-title">100% Royalty Ownership</h3>
+            <p class="advantage-desc">
+              You keep every cent of profit. All royalty deposits from Amazon, Barnes &amp; Noble, and IngramSpark route straight to your personal author bank account.
+            </p>
+          </div>
+
+          <div class="advantage-card reveal-on-scroll">
+            <div class="advantage-icon-wrap">
+              <i data-lucide="copyright"></i>
+            </div>
+            <h3 class="advantage-title">Full Copyright Retention</h3>
+            <p class="advantage-desc">
+              Your words belong to you. We file full U.S. copyright protections strictly in your legal name. You hold 100% film, audio, and translation rights.
+            </p>
+          </div>
+
+          <div class="advantage-card reveal-on-scroll">
+            <div class="advantage-icon-wrap">
+              <i data-lucide="users"></i>
+            </div>
+            <h3 class="advantage-title">Dedicated Senior Director</h3>
+            <p class="advantage-desc">
+              No generic support tickets. You receive a dedicated Senior Publishing Director who shepherds your book from draft critique to national launch.
+            </p>
+          </div>
+
+          <div class="advantage-card reveal-on-scroll">
+            <div class="advantage-icon-wrap">
+              <i data-lucide="clock"></i>
+            </div>
+            <h3 class="advantage-title">Rapid 30-45 Day Turnaround</h3>
+            <p class="advantage-desc">
+              Traditional publishing takes 18 to 24 months. Our agile production engine brings your book to the global market in just 30 to 45 business days.
+            </p>
+          </div>
+
+          <div class="advantage-card reveal-on-scroll">
+            <div class="advantage-icon-wrap">
+              <i data-lucide="target"></i>
+            </div>
+            <h3 class="advantage-title">Amazon Bestseller Guarantee</h3>
+            <p class="advantage-desc">
+              Our marketing specialists optimize Amazon metadata, category keyword density, and launch spikes to guarantee category bestseller positioning.
+            </p>
+          </div>
+
+          <div class="advantage-card reveal-on-scroll">
+            <div class="advantage-icon-wrap">
+              <i data-lucide="book-open-check"></i>
+            </div>
+            <h3 class="advantage-title">Bespoke Hardcover &amp; POD</h3>
+            <p class="advantage-desc">
+              Enjoy print-on-demand fulfillment with zero inventory risk. Readers order worldwide, and premium hardcovers print and ship on demand automatically.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         11. PUBLISHING PACKAGES (PRICING TIERS)
+         ==================================================================== -->
+    <section class="section-padding pricing-section" id="packages">
+      <div class="container">
+        <div class="text-center reveal-on-scroll">
+          <div class="section-tag">
+            <i data-lucide="badge-dollar-sign"></i> Transparent Tiers
+          </div>
+          <h2 class="section-title">All-Inclusive Publishing Packages</h2>
+          <p class="section-subtitle">
+            Fair, transparent pricing with no hidden royalties or surprise distribution fees. Select your tier or request a custom quote.
+          </p>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Package 1: Essential Launch -->
+          <div class="pricing-card reveal-on-scroll">
+            <div>
+              <div class="package-header">
+                <div class="package-tier-name">Essential Launch</div>
+                <div class="package-subtitle">Perfect for authors with a completed draft ready for global launch.</div>
+                <div class="package-price-wrap">
+                  <span class="package-currency">$</span>
+                  <span class="package-amount">899</span>
+                  <span class="package-period">/ one-time</span>
+                </div>
+              </div>
+
+              <div class="package-features-list">
+                <div class="package-feature-item">
+                  <i data-lucide="check"></i> Comprehensive Proofreading Pass
+                </div>
+                <div class="package-feature-item">
+                  <i data-lucide="check"></i> Custom Paperback &amp; eBook Cover Design
+                </div>
+                <div class="package-feature-item">
+                  <i data-lucide="check"></i> Interior Layout &amp; Typography Formatting
+                </div>
+                <div class="package-feature-item">
+                  <i data-lucide="check"></i> Amazon KDP &amp; B&amp;N Distribution
+                </div>
+                <div class="package-feature-item">
+                  <i data-lucide="check"></i> Free ISBN &amp; Barcode Assignment
+                </div>
+                <div class="package-feature-item">
+                  <i data-lucide="check"></i> 100% Royalty Ownership Kept by You
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="btn btn-secondary" onclick="openConsultationModal('Essential Launch Package ($899)')" style="width: 100%; justify-content: center;">
+              <span>Select Essential</span>
+              <i data-lucide="arrow-right"></i>
+            </button>
+          </div>
+
+          <!-- Package 2: Bestseller Showcase (Featured) -->
+          <div class="pricing-card is-featured reveal-on-scroll">
+            <div class="pricing-featured-badge">Most Popular Choice</div>
+            <div>
+              <div class="package-header">
+                <div class="package-tier-name">Bestseller Showcase</div>
+                <div class="package-subtitle">The gold standard for serious authors aiming for chart-topping visibility.</div>
+                <div class="package-price-wrap">
+                  <span class="package-currency">$</span>
+                  <span class="package-amount">1,999</span>
+                  <span class="package-period">/ one-time</span>
+                </div>
+              </div>
+
+              <div class="package-features-list">
+                <div class="package-feature-item">
+                  <i data-lucide="check"></i> In-Depth Developmental Editing &amp; Copyedit
+                </div>
+                <div class="package-feature-item">
+                  <i data-lucide="check"></i> Hardcover, Paperback &amp; eBook Custom Design
+                </div>
+                <div class="package-feature-item">
+                  <i data-lucide="check"></i> IngramSpark Worldwide Distribution (40k stores)
+                </div>
+                <div class="package-feature-item">
+                  <i data-lucide="check"></i> Guaranteed Amazon Bestseller Launch Campaign
+                </div>
+                <div class="package-feature-item">
+                  <i data-lucide="check"></i> Custom Author Website Landing Page
+                </div>
+                <div class="package-feature-item">
+                  <i data-lucide="check"></i> Dedicated Senior Publishing Director
+                </div>
+                <div class="package-feature-item">
+                  <i data-lucide="check"></i> 100% Royalties &amp; Copyright Ownership
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="btn btn-primary btn-glow" onclick="openConsultationModal('Bestseller Showcase Package ($1,999)')" style="width: 100%; justify-content: center;">
+              <span>Claim Bestseller Suite</span>
+              <i data-lucide="sparkles"></i>
+            </button>
+          </div>
+
+          <!-- Package 3: Executive Ghostwriting & PR -->
+          <div class="pricing-card reveal-on-scroll">
+            <div>
+              <div class="package-header">
+                <div class="package-tier-name">Executive Suite &amp; PR</div>
+                <div class="package-subtitle">Turnkey ghostwriting, premium media PR, and audiobook creation.</div>
+                <div class="package-price-wrap">
+                  <span class="package-currency">$</span>
+                  <span class="package-amount">3,999</span>
+                  <span class="package-period">/ starting</span>
+                </div>
+              </div>
+
+              <div class="package-features-list">
+                <div class="package-feature-item">
+                  <i data-lucide="check"></i> Full Professional Ghostwriting Collaboration
+                </div>
+                <div class="package-feature-item">
+                  <i data-lucide="check"></i> Complete Studio Audiobook Narration (ACX)
+                </div>
+                <div class="package-feature-item">
+                  <i data-lucide="check"></i> National Press Release &amp; Media Interview Pitch
+                </div>
+                <div class="package-feature-item">
+                  <i data-lucide="check"></i> Times Square Digital Billboard Showcase
+                </div>
+                <div class="package-feature-item">
+                  <i data-lucide="check"></i> Premium Hardcover Embossed Foil Jacket
+                </div>
+                <div class="package-feature-item">
+                  <i data-lucide="check"></i> Full IP, Film, &amp; Translation Rights
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="btn btn-secondary" onclick="openConsultationModal('Executive Suite & PR ($3,999+)')" style="width: 100%; justify-content: center;">
+              <span>Inquire Executive</span>
+              <i data-lucide="arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         12. AUTHOR TESTIMONIALS & REVIEWS
+         ==================================================================== -->
+    <section class="section-padding testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="text-center reveal-on-scroll">
+          <div class="section-tag">
+            <i data-lucide="message-square-quote"></i> Verified Authors
+          </div>
+          <h2 class="section-title">Words From Our Published Authors</h2>
+          <p class="section-subtitle">
+            Read first-hand accounts from authors who brought their vision to life with AMH Publishers.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Review 1 -->
+          <div class="testimonial-card reveal-on-scroll">
+            <div>
+              <i data-lucide="quote" class="testimonial-quote-icon"></i>
+              <p class="testimonial-text">
+                "AMH Publishers made my lifelong dream of becoming an author a reality. From the developmental editing that tightened my narrative to the breathtaking 3D cover, their team was attentive, artistic, and deeply professional. My book hit #1 in its Amazon category within 48 hours of launch!"
+              </p>
+            </div>
+            <div class="testimonial-author-row">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Margaret Pfeifer" class="testimonial-avatar" />
+              <div class="testimonial-author-info">
+                <span class="testimonial-author-name">Margaret Pfeifer</span>
+                <span class="testimonial-author-book">Author of "Echoes of Wisdom"</span>
+                <span class="verified-badge"><i data-lucide="badge-check"></i> Verified Published Author</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="testimonial-card reveal-on-scroll">
+            <div>
+              <i data-lucide="quote" class="testimonial-quote-icon"></i>
+              <p class="testimonial-text">
+                "As an executive, I had years of industry leadership insights but zero time to write. AMH's ghostwriting team conducted thorough interviews and captured my voice with uncanny precision. Keeping 100% of my royalties is the cherry on top. I recommend them to every founder."
+              </p>
+            </div>
+            <div class="testimonial-author-row">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Harrison Cole" class="testimonial-avatar" />
+              <div class="testimonial-author-info">
+                <span class="testimonial-author-name">Harrison Cole</span>
+                <span class="testimonial-author-book">Author of "The Sovereign Leader"</span>
+                <span class="verified-badge"><i data-lucide="badge-check"></i> Verified Published Author</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="testimonial-card reveal-on-scroll">
+            <div>
+              <i data-lucide="quote" class="testimonial-quote-icon"></i>
+              <p class="testimonial-text">
+                "The audiobook production and global distribution through IngramSpark allowed my children's fantasy novel to reach readers and schools in 12 countries. The project manager communicated every week without fail. Truly a premier publishing house!"
+              </p>
+            </div>
+            <div class="testimonial-author-row">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80" alt="Dr. Brenda Williams" class="testimonial-avatar" />
+              <div class="testimonial-author-info">
+                <span class="testimonial-author-name">Dr. Brenda Williams</span>
+                <span class="testimonial-author-book">Author of "A Gentle Voice"</span>
+                <span class="verified-badge"><i data-lucide="badge-check"></i> Verified Published Author</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         13. FREQUENTLY ASKED QUESTIONS (ACCORDION)
+         ==================================================================== -->
+    <section class="section-padding faq-section" id="faq">
+      <div class="container">
+        <div class="text-center reveal-on-scroll">
+          <div class="section-tag">
+            <i data-lucide="help-circle"></i> Author Guidance
+          </div>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">
+            Find answers to commonly asked questions about our publishing agreement, royalties, process, and copyright protections.
+          </p>
+        </div>
+
+        <div class="faq-accordion-wrap">
+          <!-- FAQ 1 -->
+          <div class="faq-item reveal-on-scroll">
+            <button class="faq-header-btn" type="button">
+              <span class="faq-question-text">Do I retain 100% of my rights and book royalties?</span>
+              <span class="faq-toggle-icon"><i data-lucide="chevron-down"></i></span>
+            </button>
+            <div class="faq-body-collapse">
+              <div class="faq-body-content">
+                Yes, absolutely. Unlike traditional publishers or vanity presses who take 30% to 70% of your earnings, AMH Publishers operates on a fee-for-service model. You retain 100% of all royalties, intellectual property rights, and film/merchandise adaptations. All sales proceeds are deposited directly from retailers into your personal bank account.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item reveal-on-scroll">
+            <button class="faq-header-btn" type="button">
+              <span class="faq-question-text">How long does the entire book publishing process take?</span>
+              <span class="faq-toggle-icon"><i data-lucide="chevron-down"></i></span>
+            </button>
+            <div class="faq-body-collapse">
+              <div class="faq-body-content">
+                For complete manuscripts entering our publishing, editing, and design pipeline, our average turnaround is 30 to 45 business days. If you require full ghostwriting from scratch, the process typically takes 3 to 6 months depending on the manuscript length and author interview schedule.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item reveal-on-scroll">
+            <button class="faq-header-btn" type="button">
+              <span class="faq-question-text">Where will my book be available for purchase worldwide?</span>
+              <span class="faq-toggle-icon"><i data-lucide="chevron-down"></i></span>
+            </button>
+            <div class="faq-body-collapse">
+              <div class="faq-body-content">
+                Your title will be distributed across all major digital and print retailers including Amazon Kindle, Barnes &amp; Noble, Apple Books, Google Play, Kobo, and IngramSpark. Ingram's network makes your book orderable in over 40,000 independent bookstores, retail chains, and university libraries across the globe.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item reveal-on-scroll">
+            <button class="faq-header-btn" type="button">
+              <span class="faq-question-text">Can I publish in Paperback, Hardcover, eBook, and Audiobook?</span>
+              <span class="faq-toggle-icon"><i data-lucide="chevron-down"></i></span>
+            </button>
+            <div class="faq-body-collapse">
+              <div class="faq-body-content">
+                Yes! We format and prepare your files for every publishing medium. We design custom dust jackets and case laminates for Hardcovers, format print-on-demand Paperbacks, generate optimized ePubs for Kindle and Apple, and produce SAG-AFTRA narrated Audiobooks distributed via Audible and ACX.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-item reveal-on-scroll">
+            <button class="faq-header-btn" type="button">
+              <span class="faq-question-text">What if I only have an idea and haven't written the draft yet?</span>
+              <span class="faq-toggle-icon"><i data-lucide="chevron-down"></i></span>
+            </button>
+            <div class="faq-body-collapse">
+              <div class="faq-body-content">
+                That is our specialty! Our ghostwriting team pairs you with a genre-specialist ghostwriter. Through structured audio interviews and chapter outlines, we craft your manuscript chapter by chapter with your sign-off at each milestone until the full book is finalized.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="faq-item reveal-on-scroll">
+            <button class="faq-header-btn" type="button">
+              <span class="faq-question-text">Do you provide official ISBN numbers and copyright registration?</span>
+              <span class="faq-toggle-icon"><i data-lucide="chevron-down"></i></span>
+            </button>
+            <div class="faq-body-collapse">
+              <div class="faq-body-content">
+                Yes. Every published edition (eBook, paperback, hardcover, audiobook) receives its own dedicated ISBN and scannable barcode registered under your name. We also coordinate your formal U.S. Copyright filing and Library of Congress Control Number (LCCN).
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         14. CONTACT & CONSULTATION FORM (ZERO CHROME STYLING)
+         ==================================================================== -->
+    <section class="section-padding contact-section" id="contact">
+      <div class="container">
+        <div class="text-center reveal-on-scroll">
+          <div class="section-tag">
+            <i data-lucide="send"></i> Direct Access
+          </div>
+          <h2 class="section-title">Schedule Your Free Publishing Consultation</h2>
+          <p class="section-subtitle">
+            Speak directly with our senior publishing directors. Receive a customized publishing proposal and a comprehensive manuscript audit at no cost.
+          </p>
+        </div>
+
+        <div class="contact-layout-grid">
+          <!-- Contact Info Side -->
+          <div class="contact-info-panel reveal-on-scroll">
+            <div>
+              <div class="contact-info-header">
+                <h3 class="contact-info-title">Let’s Bring Your Book to Life</h3>
+                <p class="contact-info-desc">
+                  Have questions about your manuscript, timelines, or our ghostwriting process? Reach out directly via phone or email for immediate assistance.
+                </p>
+              </div>
+
+              <div class="contact-channels-list">
+                <div class="contact-channel-item">
+                  <div class="channel-icon-box">
+                    <i data-lucide="phone"></i>
+                  </div>
+                  <div class="channel-content-box">
+                    <span class="channel-label">Direct Phone Line</span>
+                    <a href="tel:4242166219" class="channel-value-link">424 216 6219</a>
+                  </div>
+                </div>
+
+                <div class="contact-channel-item">
+                  <div class="channel-icon-box">
+                    <i data-lucide="mail"></i>
+                  </div>
+                  <div class="channel-content-box">
+                    <span class="channel-label">Editorial Inquiries</span>
+                    <a href="mailto:info@amhpublishers.com" class="channel-value-link">info@amhpublishers.com</a>
+                  </div>
+                </div>
+
+                <div class="contact-channel-item">
+                  <div class="channel-icon-box">
+                    <i data-lucide="map-pin"></i>
+                  </div>
+                  <div class="channel-content-box">
+                    <span class="channel-label">Publishing Headquarters</span>
+                    <span class="channel-value-link" style="font-size: 0.95rem;">Los Angeles, CA &amp; Nationwide Service</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="author-guarantee-box">
+              <i data-lucide="shield-check"></i>
+              <div class="author-guarantee-text">
+                <strong>Strict Author Confidentiality:</strong> All manuscripts and ideas submitted are protected by our mutual Non-Disclosure Agreement (NDA).
+              </div>
+            </div>
+          </div>
+
+          <!-- Custom Form Card (Zero Chrome Styling) -->
+          <div class="contact-form-card reveal-on-scroll">
+            <form class="custom-form" id="lead-consultation-form" novalidate>
+              <div class="form-row-2col">
+                <div class="form-field-group">
+                  <label class="form-field-label" for="author-name">Your Full Name *</label>
+                  <input type="text" id="author-name" class="custom-input" placeholder="e.g. Eleanor Vance" required />
+                </div>
+                <div class="form-field-group">
+                  <label class="form-field-label" for="author-email">Email Address *</label>
+                  <input type="email" id="author-email" class="custom-input" placeholder="e.g. eleanor@example.com" required />
+                </div>
+              </div>
+
+              <div class="form-row-2col">
+                <div class="form-field-group">
+                  <label class="form-field-label" for="author-phone">Phone Number *</label>
+                  <input type="tel" id="author-phone" class="custom-input" placeholder="e.g. (424) 216-6219" required />
+                </div>
+                
+                <!-- Custom Dropdown Component 1: Service Type -->
+                <div class="form-field-group">
+                  <label class="form-field-label">Primary Service Needed *</label>
+                  <div class="custom-dropdown-wrap" id="dropdown-service">
+                    <input type="hidden" id="selected-service-input" value="Publishing & Distribution" />
+                    <div class="custom-dropdown-trigger" tabindex="0">
+                      <span class="dropdown-selected-text">Publishing &amp; Distribution</span>
+                      <i data-lucide="chevron-down"></i>
+                    </div>
+                    <div class="custom-dropdown-menu" data-lenis-prevent="true">
+                      <div class="dropdown-option is-selected" data-val="Publishing & Distribution">Publishing &amp; Distribution</div>
+                      <div class="dropdown-option" data-val="Ghostwriting & Memoir Writing">Ghostwriting &amp; Memoir</div>
+                      <div class="dropdown-option" data-val="Editing & Proofreading">Editing &amp; Proofreading</div>
+                      <div class="dropdown-option" data-val="Cover Design & Formatting">Cover Design &amp; Formatting</div>
+                      <div class="dropdown-option" data-val="Audiobook Production">Audiobook Production</div>
+                      <div class="dropdown-option" data-val="Bestseller Marketing">Bestseller Marketing &amp; PR</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-row-2col">
+                <!-- Custom Dropdown Component 2: Word Count / Stage -->
+                <div class="form-field-group">
+                  <label class="form-field-label">Manuscript Stage / Word Count</label>
+                  <div class="custom-dropdown-wrap" id="dropdown-stage">
+                    <input type="hidden" id="selected-stage-input" value="Draft in progress (20k-50k words)" />
+                    <div class="custom-dropdown-trigger" tabindex="0">
+                      <span class="dropdown-selected-text">Draft in progress (20k-50k words)</span>
+                      <i data-lucide="chevron-down"></i>
+                    </div>
+                    <div class="custom-dropdown-menu" data-lenis-prevent="true">
+                      <div class="dropdown-option" data-val="Concept / Outline Only">Concept / Outline Only</div>
+                      <div class="dropdown-option is-selected" data-val="Draft in progress (20k-50k words)">Draft in progress (20k-50k words)</div>
+                      <div class="dropdown-option" data-val="Completed Draft (50k-80k words)">Completed Draft (50k-80k words)</div>
+                      <div class="dropdown-option" data-val="Epic Manuscript (80k+ words)">Epic Manuscript (80k+ words)</div>
+                      <div class="dropdown-option" data-val="Children's Book (Under 5k words)">Children's Book (Under 5k words)</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-field-group">
+                  <label class="form-field-label">Preferred Launch Timeline</label>
+                  <div class="custom-dropdown-wrap" id="dropdown-timeline">
+                    <input type="hidden" id="selected-timeline-input" value="Next 30-60 Days" />
+                    <div class="custom-dropdown-trigger" tabindex="0">
+                      <span class="dropdown-selected-text">Next 30-60 Days</span>
+                      <i data-lucide="chevron-down"></i>
+                    </div>
+                    <div class="custom-dropdown-menu" data-lenis-prevent="true">
+                      <div class="dropdown-option" data-val="Immediate / Urgent (30 Days)">Immediate / Urgent (30 Days)</div>
+                      <div class="dropdown-option is-selected" data-val="Next 30-60 Days">Next 30-60 Days</div>
+                      <div class="dropdown-option" data-val="3 to 6 Months">3 to 6 Months</div>
+                      <div class="dropdown-option" data-val="Flexible / Planning Ahead">Flexible / Planning Ahead</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-field-group">
+                <label class="form-field-label" for="project-notes">Brief Book Synopsis / Goals</label>
+                <textarea id="project-notes" class="custom-textarea" placeholder="Tell us briefly about your book, themes, target audience, and what you would like to achieve..."></textarea>
+              </div>
+
+              <!-- Success Notification Alert -->
+              <div class="form-feedback-notice" id="form-feedback">
+                <i data-lucide="check-circle-2"></i>
+                <span>Thank you! Your inquiry has been submitted. A senior publishing director will contact you within 24 hours.</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg btn-glow" id="form-submit-btn" style="width: 100%; justify-content: center;">
+                <span>Submit For Free Review</span>
+                <i data-lucide="send"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================================================================
+       15. COMPREHENSIVE FOOTER
+       ====================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Narrative Column -->
+        <div class="footer-brand-column">
+          <a href="#hero" class="brand-logo-link" style="margin-bottom: 20px;">
+            <div class="brand-logo-wrapper">
+              <img src="AMH_LOGO.webp" alt="AMH Publishers Logo" class="brand-logo-img" />
+            </div>
+          </a>
+          <p class="footer-bio-text">
+            AMH Publishers is a premier full-service book publishing and author branding agency. We turn visionary concepts and raw manuscripts into published bestsellers distributed to readers across the globe.
+          </p>
+          <div class="footer-social-row">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+              </svg>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/>
+              </svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <div class="footer-col-title">Navigation</div>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="#hero">Home</a></li>
+            <li class="footer-link-item"><a href="#services">Publishing Services</a></li>
+            <li class="footer-link-item"><a href="#process">The 5-Step Process</a></li>
+            <li class="footer-link-item"><a href="#calculator">Royalty Estimator</a></li>
+            <li class="footer-link-item"><a href="#portfolio">Bestsellers Portfolio</a></li>
+            <li class="footer-link-item"><a href="#packages">Publishing Packages</a></li>
+          </ul>
+        </div>
+
+        <!-- Publishing Services -->
+        <div>
+          <div class="footer-col-title">Author Services</div>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="#services">Ghostwriting &amp; Memoirs</a></li>
+            <li class="footer-link-item"><a href="#services">Developmental Editing</a></li>
+            <li class="footer-link-item"><a href="#services">Cover Design &amp; 3D Art</a></li>
+            <li class="footer-link-item"><a href="#services">Worldwide Distribution</a></li>
+            <li class="footer-link-item"><a href="#services">Audiobook Narration</a></li>
+            <li class="footer-link-item"><a href="#services">Bestseller Marketing</a></li>
+          </ul>
+        </div>
+
+        <!-- Direct Contact & Newsletter -->
+        <div>
+          <div class="footer-col-title">Author Advisory</div>
+          <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px; font-size: 0.92rem; color: var(--text-muted);">
+            <div><strong style="color: var(--text-primary);">Email:</strong> info@amhpublishers.com</div>
+            <div><strong style="color: var(--text-primary);">Phone:</strong> 424 216 6219</div>
+            <div><strong style="color: var(--text-primary);">Hours:</strong> Mon - Fri: 8am - 6pm EST</div>
+          </div>
+
+          <div class="footer-newsletter-wrap">
+            <div style="font-size: 0.85rem; font-weight: 600; color: var(--text-secondary);">Author Insider Newsletter</div>
+            <form class="footer-newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Author Insights!'); this.reset();">
+              <input type="email" class="newsletter-input" placeholder="Your email address" required />
+              <button type="submit" class="newsletter-submit-btn" aria-label="Subscribe">
+                <i data-lucide="arrow-right"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Copyright & Legal Links -->
+      <div class="footer-bottom-row">
+        <div>&copy; <span id="current-year">2026</span> AMH Publishers. All Rights Reserved.</div>
+        <div class="footer-legal-links">
+          <a href="#hero">Privacy Policy</a>
+          <a href="#hero">Terms of Service</a>
+          <a href="#hero">Author Agreement</a>
+          <a href="#hero">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       16. FLOATING ACTION CONTROLS (WHATSAPP & BACK-TO-TOP)
+       ====================================================================== -->
+  <div class="floating-controls-wrap">
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/14242166219?text=Hello%20AMH%20Publishers,%20I%20would%20like%20to%20discuss%20publishing%20my%20book." 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="floating-whatsapp-btn" 
+       aria-label="Chat with AMH Publishers on WhatsApp"
+       title="Chat with us on WhatsApp">
+      <div class="whatsapp-ping-circle"></div>
+      <svg class="whatsapp-svg" viewBox="0 0 32 32" width="28" height="28" fill="currentColor">
+        <path d="M16 2.5c-7.46 0-13.5 6.04-13.5 13.5 0 2.38.62 4.7 1.8 6.74L2.5 29.5l6.98-1.76c1.97 1.07 4.2 1.63 6.52 1.63 7.46 0 13.5-6.04 13.5-13.5S23.46 2.5 16 2.5zm0 24.64c-2.03 0-4.01-.54-5.74-1.56l-.41-.24-4.26 1.07 1.13-4.14-.27-.43c-1.12-1.78-1.72-3.84-1.72-5.97 0-6.19 5.04-11.23 11.27-11.23s11.27 5.04 11.27 11.23-5.05 11.27-11.27 11.27zm6.18-8.44c-.34-.17-2-.99-2.31-1.1-.31-.11-.54-.17-.77.17-.23.34-.88 1.1-1.08 1.33-.2.23-.4.26-.74.09-.34-.17-1.44-.53-2.74-1.69-1.01-.9-1.69-2.01-1.89-2.35-.2-.34-.02-.52.15-.69.15-.15.34-.4.51-.59.17-.2.23-.34.34-.57.11-.23.06-.43-.03-.6-.09-.17-.77-1.85-1.05-2.54-.28-.67-.56-.58-.77-.59h-.66c-.23 0-.6.09-.91.43-.31.34-1.2 1.17-1.2 2.86s1.23 3.32 1.4 3.55c.17.23 2.42 3.69 5.86 5.17.82.35 1.46.56 1.96.72.82.26 1.57.22 2.16.14.66-.1 2.03-.83 2.31-1.63.28-.8.28-1.49.2-1.63-.08-.14-.31-.23-.65-.4z"/>
+      </svg>
+    </a>
+
+    <!-- Back to Top with Dynamic Circular SVG Progress Ring -->
+    <button class="back-to-top-btn" id="back-to-top" aria-label="Scroll back to top" title="Back to top">
+      <svg class="scroll-progress-svg" viewBox="0 0 50 50">
+        <defs>
+          <linearGradient id="progressGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#e63946" />
+            <stop offset="50%" stop-color="#f77f00" />
+            <stop offset="100%" stop-color="#fcbf49" />
+          </linearGradient>
+        </defs>
+        <circle class="scroll-progress-circle-bg" cx="25" cy="25" r="23" />
+        <circle class="scroll-progress-circle-bar" id="progress-bar-circle" cx="25" cy="25" r="23" />
+      </svg>
+      <i data-lucide="arrow-up"></i>
+    </button>
+  </div>
+
+  <!-- ======================================================================
+       17. MODAL DIALOGS (PORTFOLIO SYNOPSIS & CONSULTATION MODAL)
+       ====================================================================== -->
+  <!-- Portfolio Synopsis Modal -->
+  <div class="modal-overlay" id="book-modal" aria-hidden="true" role="dialog" aria-modal="true" data-lenis-prevent="true">
+    <div class="modal-dialog-box" data-lenis-prevent="true">
+      <button type="button" class="modal-close-btn" onclick="closeBookModal()" aria-label="Close modal">
+        <i data-lucide="x"></i>
+      </button>
+      <div id="book-modal-content">
+        <!-- Injected via script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- General Consultation Quote Modal -->
+  <div class="modal-overlay" id="consultation-modal" aria-hidden="true" role="dialog" aria-modal="true" data-lenis-prevent="true">
+    <div class="modal-dialog-box" data-lenis-prevent="true">
+      <button type="button" class="modal-close-btn" onclick="closeConsultationModal()" aria-label="Close modal">
+        <i data-lucide="x"></i>
+      </button>
+      <div style="margin-bottom: 24px;">
+        <div class="section-tag"><i data-lucide="award"></i> Free Consultation</div>
+        <h3 class="section-title" style="font-size: 1.8rem;" id="modal-service-title">Inquire About Publishing</h3>
+        <p style="color: var(--text-muted); font-size: 0.95rem;">
+          Connect with an AMH Senior Publishing Director. We'll tailor an author roadmap and provide a free manuscript critique.
+        </p>
+      </div>
+
+      <form class="custom-form" id="modal-quick-form" onsubmit="handleModalSubmit(event)">
+        <div class="form-field-group">
+          <label class="form-field-label" for="modal-author-name">Full Name *</label>
+          <input type="text" id="modal-author-name" class="custom-input" placeholder="Your name" required />
+        </div>
+        <div class="form-field-group">
+          <label class="form-field-label" for="modal-author-email">Email Address *</label>
+          <input type="email" id="modal-author-email" class="custom-input" placeholder="Your email address" required />
+        </div>
+        <div class="form-field-group">
+          <label class="form-field-label" for="modal-author-phone">Phone Number *</label>
+          <input type="tel" id="modal-author-phone" class="custom-input" placeholder="Your phone number" required />
+        </div>
+        <div class="form-field-group">
+          <label class="form-field-label" for="modal-author-notes">Project Notes or Questions</label>
+          <textarea id="modal-author-notes" class="custom-textarea" placeholder="Tell us about your book or questions..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-glow" style="width: 100%; justify-content: center; margin-top: 8px;">
+          <span>Request Free Proposal</span>
+          <i data-lucide="sparkles"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Custom JavaScript Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
