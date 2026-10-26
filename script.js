@@ -377,7 +377,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const tiltContainer = document.getElementById('hero-tilt-container');
   const bookCard = document.getElementById('hero-book-card');
 
-  if (tiltContainer && bookCard) {
+  // Only enable mouse-move 3D parallax on desktop to keep mobile layout static & performant
+  if (tiltContainer && bookCard && !isMobile) {
     tiltContainer.addEventListener('mousemove', (e) => {
       const rect = tiltContainer.getBoundingClientRect();
       const x = e.clientX - rect.left - rect.width / 2;
