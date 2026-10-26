@@ -10,13 +10,16 @@ document.addEventListener('DOMContentLoaded', () => {
      1. INITIALIZE LENIS MOMENTUM SMOOTH SCROLLING (INSTANT & BUTTERY SMOOTH)
      -------------------------------------------------------------------------- */
   let lenisInstance = null;
-  if (typeof Lenis !== 'undefined') {
+  const isMobile = window.innerWidth <= 860 || ('ontouchstart' in window) || navigator.maxTouchPoints > 0;
+
+  // On mobile touch devices, let the browser's hardware-accelerated 120fps native touch scroll handle scrolling
+  if (typeof Lenis !== 'undefined' && !isMobile) {
     lenisInstance = new Lenis({
       lerp: 0.12,          // Responsive instant 1:1 tracking without latency
       wheelMultiplier: 1.0,
       touchMultiplier: 1.0,
       smoothWheel: true,
-      syncTouch: false,    // Native touch scrolling on trackpads/mobile viewports
+      syncTouch: false,
       autoRaf: true,
     });
 
@@ -315,7 +318,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const particles = [];
-    const particleCount = 45;
+    // Optimize particle count for mobile screens to ensure 60fps performance
+    const particleCount = isMobile ? 18 : 45;
+    const maxLineDist = isMobile ? 80 : 110;
 
     for (let i = 0; i < particleCount; i++) {
       particles.push({
@@ -349,11 +354,11 @@ document.addEventListener('DOMContentLoaded', () => {
         for (let j = idx + 1; j < particles.length; j++) {
           const p2 = particles[j];
           const dist = Math.hypot(p.x - p2.x, p.y - p2.y);
-          if (dist < 110) {
+          if (dist < maxLineDist) {
             ctx.beginPath();
             ctx.moveTo(p.x, p.y);
             ctx.lineTo(p2.x, p2.y);
-            ctx.strokeStyle = `rgba(252, 191, 73, ${0.15 * (1 - dist / 110)})`;
+            ctx.strokeStyle = `rgba(252, 191, 73, ${0.15 * (1 - dist / maxLineDist)})`;
             ctx.lineWidth = 0.6;
             ctx.stroke();
           }
